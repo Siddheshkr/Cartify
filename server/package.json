@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.jsx",
-    "dev": "nodemon server.jsx"
+    "start": "node app.jsx",
+    "dev": "nodemon app.jsx"
   },
   "keywords": [],
   "author": "",
