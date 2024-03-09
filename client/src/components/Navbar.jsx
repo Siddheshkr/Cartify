@@ -16,13 +16,13 @@ const Navbar = () => {
             to="/"
             className="btn px-0  sm:px-3  shadow-none border-none  text-lg sm:text-2xl font-bold active:border-none"
           >
-            Cartify🛍️
+            Shopkart🛍️
           </Link>
         </div>
         <SearchBar />
-        <div className="flex-none  sm:gap-3 gap-1 ">
+        <div className="flex-none  sm:gap-3  ">
           <Link to="/">
-            <h1 className=" btn p-0 ml-1 sm:ml-3   shadow-none border-none active:border-none ">
+            <h1 className=" btn p-0 sm:ml-3   shadow-none border-none active:border-none ">
               <HiMiniHome className=" sm:w-8 sm:h-8 w-7 h-7" />
             </h1>
           </Link>
