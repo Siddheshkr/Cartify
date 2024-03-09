@@ -1,4 +1,4 @@
-# Cartify🛍️ (Ecommerce store)
+# Shopkart🛍️ (Ecommerce store)
 ![Screenshot 2024-02-22 141013](https://github.com/Siddheshkr/Cartify/assets/84951276/1e015a8e-9083-4265-ae6f-bc6f9e52b0d0)
 
 ## Features
