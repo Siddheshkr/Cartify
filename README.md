@@ -1,9 +1,11 @@
 # Shopkart🛍️ (Ecommerce store)
-![Screenshot 2024-02-22 141013](https://github.com/Siddheshkr/Cartify/assets/84951276/1e015a8e-9083-4265-ae6f-bc6f9e52b0d0)
+![shopkart2-ezgif](https://github.com/Siddheshkr/Shopkart/assets/84951276/7f8245a4-af24-4507-be15-8cad4ef40da5)
+
 
 ## Features
 
 - **Product Listings :** 🍽️ Display a list of Product with details and Product items.
+- **Stripe Payment :** 💳 Receives realtime payments through card.
 - **Menu Navigation :** 📜 Users can browse Product menus and add items to their cart.
 - **Fetch API :** ✅ 
 Fetch fake API for dynamic website updates, enhancing user experience.
@@ -18,4 +20,5 @@ Fetch fake API for dynamic website updates, enhancing user experience.
  - React.js
  - Redux
  - TailwindCSS
+ - stripe
  - FakeStoreAPI
