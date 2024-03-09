@@ -13,7 +13,7 @@ Fetch fake API for dynamic website updates, enhancing user experience.
 - **Responsive Website :** 📱website is responsive and looks good on various screen sizes.
 - **Toast :** 📦 Successfully added items to your cart!
  
- ## Demo: https://cartify-alpha.vercel.app/
+ ## Demo: https://shopkart-store.vercel.app/
  ## Tech Used: 
  - React.js
  - Redux
