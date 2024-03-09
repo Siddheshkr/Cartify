@@ -5,7 +5,7 @@
 ## Features
 
 - **Product Listings :** 🍽️ Display a list of Product with details and Product items.
-- **Stripe Payment :** 💳 Receives realtime payments through card.
+- **Stripe Payment :** 💳 Stripe checkout payment gateway integration.
 - **Menu Navigation :** 📜 Users can browse Product menus and add items to their cart.
 - **Fetch API :** ✅ 
 Fetch fake API for dynamic website updates, enhancing user experience.
