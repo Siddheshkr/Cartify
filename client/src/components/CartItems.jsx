@@ -83,31 +83,45 @@ function CartItems() {
 
   // Stripe Payment integration:
   const makePayment = async () => {
-    const stripe = await loadStripe(
-      "pk_test_51Orx82SF9C3UyU0xi96qkfyUdM9LoEWEyoYvi3lkXNtU56A7hG8Jhq35p5f3p2PfA4LjWMGTzznVq5MCo4ZI9wuA00TfIa9EZ2"
-    );
+    try {
+      const stripe = await loadStripe(
+        "pk_test_51Orx82SF9C3UyU0xi96qkfyUdM9LoEWEyoYvi3lkXNtU56A7hG8Jhq35p5f3p2PfA4LjWMGTzznVq5MCo4ZI9wuA00TfIa9EZ2"
+      );
 
-    const body = {
-      products: cart,
-    };
-    const headers = {
-      "Content-Type": "application/json",
-    };
-    const response = await fetch(
-      "http://localhost:7000/api/create-checkout-session",
-      {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(body),
+      const body = {
+        products: cart,
+      };
+
+      const headers = {
+        "Content-Type": "application/json",
+      };
+
+      const response = await fetch(
+        "https://shopkart-backend.vercel.app/api/create-checkout-session",
+        {
+          method: "POST",
+          headers: headers,
+          body: JSON.stringify(body),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-    );
-    const session = await response.json();
 
-    const result = stripe.redirectToCheckout({
-      sessionId: session.id,
-    });
-    if (result.error) {
-      console.log(result.error);
+      const session = await response.json();
+
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+
+      if (result.error) {
+        console.error(result.error);
+        // Handle error as needed (e.g., display an error message to the user)
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle other errors as needed
     }
   };
 
