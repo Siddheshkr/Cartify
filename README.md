@@ -1,6 +1,5 @@
-# Shopkart🛍️ (Ecommerce store)
+# Shopkart🛍️ (E-commerce store)
 ![shopkart2-ezgif](https://github.com/Siddheshkr/Shopkart/assets/84951276/7f8245a4-af24-4507-be15-8cad4ef40da5)
-
 
 ## Features
 
@@ -20,5 +19,5 @@ Fetch fake API for dynamic website updates, enhancing user experience.
  - React.js
  - Redux
  - TailwindCSS
- - stripe
+ - Stripe
  - FakeStoreAPI
